@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 
 import { SignIn } from './pages/Signin';
+import { SignUp } from './pages/Signup';
 import { Home } from './pages/Home';
 import GlobalStyles from '../styles/global';
 
