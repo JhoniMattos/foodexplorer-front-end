@@ -8,7 +8,14 @@ export default {
     BACKGROUND_300: "#000204",
     BACKGROUND_200: "#000A0F",
 
+    GRADIENT_100: "#091E26",
+    GRADIENT_200: "#00131C",
+
     BLACK: "#000000",
+
+    GRAY_500: "#4D585E",
+    GRAY_300: "#7C7C8A",
+    GRAY_400: "#76797B",
 
     RED_400: "#AB4D55",
     RED_100: "#750310",
@@ -18,7 +25,7 @@ export default {
     WHITE_700: "#4D585E",
     WHITE_500: "#7C7C8A",
     WHITE_300: "#E1E1E6",
-    WHITE_200: "FFFAF1",
+    WHITE_200: "#FFFAF1",
     WHITE_100: "#C4C4CC",
     WHITE: "#FFFFFF"
   }

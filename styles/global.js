@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -12,10 +12,16 @@ export default createGlobalStyle`
 
   :root {
     background: ${({ theme }) => theme.COLORS.BACKGROUND_200};
+
+    font-size: 62.5%;
+
+    --swiper-navigation-size: 4rem;
+    --swiper-theme-color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
   html, body, header, main, form, footer, input {
     font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
   }
 
   a {

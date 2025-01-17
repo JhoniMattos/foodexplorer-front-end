@@ -5,12 +5,11 @@ export const Container = styled.button`
   background-color: ${({ theme }) => theme.COLORS.RED_100};
   color: ${({ theme }) => theme.COLORS.WHITE};
 
-  height: 48px;
+  height: 4.8rem;
   border: 0;
-  padding: 0 16px;
-  margin-top: 16px;
+  padding: 0 1.6rem;
+  margin-top: 1.6rem;
   border-radius: 5px;
-  font-weight: 500;
 
   font-family: "Poppins", sans-serif;
 

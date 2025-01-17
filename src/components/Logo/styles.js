@@ -12,7 +12,12 @@ export const Container = styled.div`
     white-space: nowrap;
     display: flex;
 
-    font-size: 42px;
+    font-size: 2.6rem;
     color: ${({ theme }) => theme.COLORS.WHITE};
+  }
+
+  svg {
+    width: 1.8rem;
+    height: 1.8rem;
   }
 `;

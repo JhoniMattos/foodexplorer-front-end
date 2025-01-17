@@ -47,13 +47,12 @@ export const Profile = styled.div`
   }
 
   Input {
-    width: 581px;
     display: flex;
     text-align: center;
   }
 
   button {
-    width: 216px;
+    width: 190px;
 
     display: flex;
     align-items: center;
@@ -62,6 +61,7 @@ export const Profile = styled.div`
 
     margin-top: 0;
     margin-bottom: 8px;
+    font-family: "Poppins", serif;
     font-size: 14px;
   }
 `;
