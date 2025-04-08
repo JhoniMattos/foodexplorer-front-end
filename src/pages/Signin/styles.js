@@ -2,49 +2,96 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 300px;
-  
-`;
-
-export const Form = styled.form`
-  width: 476px;
-  padding: 64px;
+  margin-inline: 5.6rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 7.3rem;
 
-  border-radius: 16px;
+  @media (min-width: 1024px) {
+    margin-inline: 13.1rem;
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_500};
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
 
-  > h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 32px;
+export const Brand = styled.div`
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin-inline: auto;
+
+  > img {
+    width: 100%;
+    max-width: 27.8rem;
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: initial;
+    margin-inline: 0;
+
+    > img {
+      max-width: 32.4rem;
+    }
+  }
+`;
+
+export const Form = styled.form`
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  > h2 {
+    display: none;
     color: ${({ theme }) => theme.COLORS.WHITE};
+   
   }
 
-  > p {
-    align-self: flex-start;
-    margin-top: 32px;
-    margin-bottom: 8px;     
-    color: ${({ theme }) => theme.COLORS.WHITE_100};
+  > section h2 {
+    margin-bottom: 0.8rem;
   }
 
+  > section input {
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    border-radius: 0.8rem;
+  }
+  
   > a {
-    margin-top: 32px;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    text-align: center;
 
     font-family: "Poppins", sans-serif;
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    font-size: 1.4rem;
+    line-height: 2.4rem;
   }
+  
+  @media (min-width: 1024px) {
+    padding: 6.4rem;
+    border-radius: 1.6rem;
 
-  Button {
-    width: 348px;
-    margin-top: 32px;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+
+    > h2 {
+      display: initial;
+
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 3.2rem;
+      line-height: 140%;
+      text-align: center;
+    }
+
+    > section input {
+      background-color: transparent;
+
+      border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+      border-radius: 0.5rem;
+    }
   }
 `;

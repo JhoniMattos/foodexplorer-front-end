@@ -17,10 +17,16 @@ export const Container = styled.div`
     width: 100vw;
 
     > div {
-      margin: 16.4rem 12.4rem 6.2rem;
+      margin: 4.4rem 0 2.5rem 2.4rem;
+      width: calc(100% - 2.4rem);
 
       header {
-        height: 26rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        height: 12rem;
+        margin-inline: 1.2rem 1.6rem;
 
         background: linear-gradient(
           180deg,
@@ -32,29 +38,86 @@ export const Container = styled.div`
         position: relative;
 
         img {
-          width: 65.6rem;
-          height: 41.2rem;
+          width: 19.1rem;
 
           position: absolute;
-          left: -6rem;
+          left: -3rem;
           bottom: 0;
         }
 
         div {
+          width: 20.2rem;
           position: absolute;
-          top: 7.1rem;
-          right: 10rem;
+          top: 3.6rem;
+          right: 2.1rem;
 
           color: ${({ theme }) => theme.COLORS.WHITE_300};
 
           h1 {
             font-family: "Poppins", sans-serif;
-            font-size: 4rem;
-            font-weight: 500;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 140%;
+
+            margin-bottom: 0.3rem;
           }
 
           p {
-            font-weight: 100;
+            font-size: 1.2rem;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    height: 100vh;
+    grid-template-rows: 9.6rem auto 7.7rem;
+
+    > main {
+      overflow-y: auto;
+
+      ::-webkit-scrollbar {
+        width: 0.8rem;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+        border-radius: 0.8rem;
+      }
+
+      > div {
+        width: calc(100% - 24.6rem);
+        margin: 17.2rem 12.3rem 4.8rem;
+
+        header {
+          height: 26rem;
+          margin-inline: 0.1rem;
+
+          border-radius: 0.8rem;
+
+          img {
+            width: 65.6rem;
+            left: -7rem;
+          }
+
+          div {
+            width: 42.2rem;
+            top: 8.8rem;
+            right: 10rem;
+
+            h1 {
+              font-weight: 500;
+              font-size: 4rem;
+
+              margin-bottom: 0.8rem;
+            }
+
+            p {
+              font-size: 1.6rem;
+              line-height: 100%;
+            }
           }
         }
       }
@@ -63,4 +126,72 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 6.2rem;
+
+  section > h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 140%;
+
+    color: ${({ theme }) => theme.COLORS.WHITE_300};
+    margin-bottom: 2.4rem;
+  }
+
+  swiper-container {
+    height: 29.2rem;
+  }
+
+  swiper-slide {
+    max-width: 21rem;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 4.8rem;
+
+    section > h2 {
+      font-size: 3.2rem;
+    }
+
+    swiper-container {
+      height: 46.2rem;
+    }
+
+    swiper-container::before,
+    swiper-container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 22.4rem;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* swiper-container::before {
+      left: 0;
+      background: linear-gradient(
+        90deg, 
+        rgba(0, 0, 0, 1) 0%,
+        transparent 100%
+      );
+    }
+
+    swiper-container::after {
+      right: 0;
+      background: linear-gradient(
+        90deg, 
+        transparent 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    } */
+
+    swiper-slide {
+      max-width: 30.4rem;
+    }
+  }
 `;
+

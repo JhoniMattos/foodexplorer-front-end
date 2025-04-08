@@ -8,9 +8,7 @@ export function Footer() {
       <Brand>
         <img src={brand} alt="" />
       </Brand>
-      <Copyright>
-        © 2023 - Todos os direitos reservados.
-      </Copyright>
+      <Copyright>© 2023 - Todos os direitos reservados.</Copyright>
     </Container>
   );
 }

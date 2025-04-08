@@ -4,11 +4,12 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   color: ${({ theme }) => theme.COLORS.WHITE_100};
 
-  border-radius: 5px;
+  border-radius: 0.5rem;
 
   > input {
     height: 4.8rem;
