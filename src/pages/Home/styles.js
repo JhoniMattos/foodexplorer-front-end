@@ -78,15 +78,6 @@ export const Container = styled.div`
     > main {
       overflow-y: auto;
 
-      ::-webkit-scrollbar {
-        width: 0.8rem;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-        border-radius: 0.8rem;
-      }
-
       > div {
         width: calc(100% - 24.6rem);
         margin: 17.2rem 12.3rem 4.8rem;
@@ -171,7 +162,7 @@ export const Content = styled.div`
       pointer-events: none;
     }
 
-    /* swiper-container::before {
+     swiper-container::before {
       left: 0;
       background: linear-gradient(
         90deg, 
@@ -187,7 +178,7 @@ export const Content = styled.div`
         transparent 0%,
         rgba(0, 0, 0, 1) 100%
       );
-    } */
+    }
 
     swiper-slide {
       max-width: 30.4rem;

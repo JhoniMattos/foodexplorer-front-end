@@ -83,7 +83,7 @@ export function Food({ data, isAdmin, isFavorite, updateFavorite, handleDetails,
       ) : (
         <FiHeart
           size={"2.4rem"}
-          fill={isFavorite ? theme.COLORS.GRAY_200 : undefined}
+          fill={isFavorite ? ({ theme }) => theme.COLORS.RED_400 : undefined}
           onClick={handleFavorite}
         />
       )}

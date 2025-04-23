@@ -21,6 +21,10 @@ export const Container = styled.header`
     background: none;
   }
 
+  svg {
+    padding-left: 0.8rem;
+  }
+
   @media (min-width: 1024px) {
     height: 9.6rem;
     padding: 2.4rem 12.3rem;

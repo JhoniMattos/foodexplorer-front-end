@@ -1,8 +1,59 @@
-# React + Vite
+<h1 align="center"> FoodExplorer </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-paginasxx\">Páginas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 
-Currently, two official plugins are available:
+<img src="./src/assets/capa.png" alt="foto de capa">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  📌  Projeto
+
+O **Food Explorer** é uma aplicação web onde os usuários podem explorar um catálogo de pratos, visualizar detalhes, e realizar pedidos através de sua conta pessoal.
+
+Com um sistema de autenticação, cada usuário pode se cadastrar, fazer login e adicionar alimentos ao carrinho para compra. A aplicação é totalmente responsiva e pensada para facilitar a experiência gastronômica digital.
+
+## Páginas
+
+- Login
+- Cadastro
+- Home
+- Detalhes do prato
+- Novo prato
+- Editar prato
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- Styled Components
+- React Responsive
+- React Router Dom
+- React Icons
+- ReactDOM
+- ReactJS
+- ViteJS
+- Axios
+- Swiper
+
+## 📘 Funcionalidades
+
+- Login
+- Criar conta
+- Cadastrar pratos
+- Mostar detalhes do prato
+- Adicionar prato ao carrinho
+- Editar prato
+- Excluir prato
+- Logout
+
+## 
+
+Feito 🤎 by Jhoni Mattos
+
+
+- 🤝 [LinkedIn](https://www.linkedin.com/in/jhoni-mattos-7a13852b0/)
+- ✉️ E-mail: jhoni.psy@gmail.com
+

@@ -22,7 +22,7 @@ export function Dish({ isAdmin, user_id }) {
   const [data, setData] = useState(null);
 
   const params = useParams();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [number, setNumber] = useState(1);
   const [cartId, setCartId] = useState(null);

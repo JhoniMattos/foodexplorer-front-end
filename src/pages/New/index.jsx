@@ -38,10 +38,10 @@ export function New({ isAdmin }) {
 
   const [loading, setLoading] = useState(false);
 
-  // const navigate = useNavigate();
+   const navigate = useNavigate();
 
   function handleBack() {
-   //  navigate(-1);
+    navigate(-1);
   }
 
   function handleImageChange(e) {
