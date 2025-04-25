@@ -21,25 +21,12 @@ export const Container = styled.header`
     background: none;
   }
 
-  svg {
-    padding-left: 0.8rem;
-  }
-
   @media (min-width: 1024px) {
     height: 9.6rem;
     padding: 2.4rem 12.3rem;
 
     justify-content: space-between;
     gap: 3.2rem;
-
-    .favorites {
-      border: 0;
-      background: none;
-
-      color: ${({ theme }) => theme.COLORS.WHITE_300};
-
-      line-height: 100%;
-    }
 
     .new .orders {
       max-width: 21.6rem;

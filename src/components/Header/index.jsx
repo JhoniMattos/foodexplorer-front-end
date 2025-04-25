@@ -1,15 +1,15 @@
 import { Container, Logout, Menu, Brand } from "./styles";
 
-import { MdClose, MdSearch } from "react-icons/md";
+import { MdClose } from "react-icons/md";
 import { FiMenu, FiLogOut } from "react-icons/fi";
 import { useMediaQuery } from "react-responsive";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 import brand from "../../assets/logo.svg";
 import brandAdmin from "../../assets/admin-desktop.svg";
 import brandMobile from "../../assets/admin-mobile.svg";
 
-import { useAuth } from '../../hooks/auth';
+import { useAuth } from "../../hooks/auth";
 import { Button } from "../Button";
 import { Input } from "../Input";
 
@@ -18,7 +18,7 @@ export function Header({
   isdisabled,
   isMenuOpen,
   setIsMenuOpen,
-  setsearch,
+  setSearch,
 }) {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
   const logo = isAdmin ? (isDesktop ? brandAdmin : brandMobile) : brand;
@@ -59,7 +59,13 @@ export function Header({
             <img src={logo} alt="Logo" />
           </Brand>
 
-          {isDesktop && <Input icon={MdSearch} placeholder="Busque por pratos ou ingredientes" isdisabled={isdisabled} setsearch={setsearch} />}
+          {isDesktop && (
+            <Input
+            placeholder="&#x1F50E;&#xFE0E; Busque por pratos ou ingredientes"
+            disabled={isdisabled}
+            onChange={(e) => setSearch(e.target.value)}
+            />
+          )}
 
           {isAdmin ? (
             isDesktop && (
