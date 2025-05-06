@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { api } from "../../services/api";
 
-import { Container, Form, Brand } from "./styles";
+import { Container, Form, Brand } from "./styles"
 
 import { Section } from "../../components/Section";
 import { Input } from "../../components/Input";

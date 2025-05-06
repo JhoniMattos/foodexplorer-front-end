@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { useAuth } from '../../hooks/auth';
 
-import { Container, Form, Brand } from "./styles";
+import { Container, Form, Brand } from "./styles"
 
 import { Section } from '../../components/Section';
 import { Input } from '../../components/Input';
