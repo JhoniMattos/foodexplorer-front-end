@@ -5,6 +5,7 @@
   <a href="#-paginasxx\">Páginas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#-funcionalidades">Personas</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <img src="./src/assets/capa.png" alt="foto de capa">
@@ -49,7 +50,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Excluir prato
 - Logout
 
-## 
+## Personas 👤
+
+Temos dois tipos usários o administrador e o usuário comum.
+
+Login: admin@email.com
+senha: admin123
+
+Login: user@email.com
+senha: user123
 
 Feito 🤎 by Jhoni Mattos
 
