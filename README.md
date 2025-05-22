@@ -50,7 +50,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Excluir prato
 - Logout
 
-## Personas 👤
+## 👤 Personas 
 
 Temos dois tipos usários o administrador e o usuário comum.
 
